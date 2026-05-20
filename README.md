@@ -73,6 +73,15 @@ L'API FastAPI prend en entrée des caractéristiques pré-calculées, normalise 
    - `http://localhost:8000`
    - `http://localhost:8000/docs`
 
+### Dashboard Streamlit
+
+Pour lancer le dashboard :
+```bash
+streamlit run app.py
+```
+
+Le dashboard s'ouvrira automatiquement dans le navigateur (généralement sur `http://localhost:8501`).
+
 ## Endpoint principal
 
 - `GET /` : vérifie que l'API fonctionne.
