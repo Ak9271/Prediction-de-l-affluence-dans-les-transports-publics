@@ -1,0 +1,1 @@
+scaler_mlp.pkl: Contient paramètres de normalisation (moyenne et écart-type). OBLIGATOIRE pour pré-traiter des données avant prédiction
