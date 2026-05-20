@@ -1,0 +1,7 @@
+mlp_1_learnin_curves.png: Montres les pertes et MAE au fil des 50 "époques"
+
+mlp_2_pred_vs_reel.png: Prédiction vs valeurs réelles (R² = 0.6062, MAE = 1.5358)
+
+mlp_3_résidus.png: Erreurs du modèle (si distrib centrée sur 0 = pas de biais systématique)
+
+mlp_4_cross_validation.png: Validation croisée sur 5 Fold (Vérifie que le modèle est stable environ MAE = 1.61 et R² = 0.58 dans tous les folds) 

@@ -1,0 +1,4 @@
+mlp_affluence_final.keras: Modèle principale (Sauvegarde du réseau de neurones entrainé) pour les prédictions
+
+
+best_mlp: Modèle sauvegardé au milieu checkpoint
