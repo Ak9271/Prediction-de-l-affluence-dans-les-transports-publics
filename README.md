@@ -92,14 +92,6 @@ docker compose build api
 docker compose build dashboard
 ```
 
-### Dashboard Streamlit
-
-Pour lancer le dashboard :
-```bash
-cd Dashboard
-streamlit run app.py
-```
-
 Le dashboard s'ouvrira automatiquement dans le navigateur (généralement sur `http://localhost:8501`).
 
 ## Endpoint principal
