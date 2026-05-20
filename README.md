@@ -59,24 +59,44 @@ L'API FastAPI prend en entrée des caractéristiques pré-calculées, normalise 
    - `http://localhost:8000`
    - `http://localhost:8000/docs` pour la documentation Swagger
 
-### Avec Docker
+### Avec Docker Compose
 
-1. Construire l'image :
+Le projet utilise maintenant `docker-compose.yml` pour lancer l'API et le dashboard en meme temps.
+
+1. Depuis la racine du projet, construire et lancer les services :
    ```bash
-   docker build --no-cache -f Api-devops/Dockerfile -t api-mlp .
+   docker compose up --build
    ```
-2. Lancer le conteneur :
+2. Ouvrir les applications :
+   - API FastAPI : `http://localhost:8000`
+   - Documentation Swagger : `http://localhost:8000/docs`
+   - Dashboard Streamlit : `http://localhost:8501`
+3. Arreter les conteneurs :
    ```bash
-   docker run -p 8000:8000 api-mlp
+   docker compose down ou d
    ```
-3. Ouvrir l'API :
-   - `http://localhost:8000`
-   - `http://localhost:8000/docs`
+
+Commandes utiles :
+
+```bash
+# Lancer en arriere-plan
+docker compose up --build -d
+
+# Voir les logs
+docker compose logs -f
+
+# Reconstruire uniquement l'API
+docker compose build api
+
+# Reconstruire uniquement le dashboard
+docker compose build dashboard
+```
 
 ### Dashboard Streamlit
 
 Pour lancer le dashboard :
 ```bash
+cd Dashboard
 streamlit run app.py
 ```
 
