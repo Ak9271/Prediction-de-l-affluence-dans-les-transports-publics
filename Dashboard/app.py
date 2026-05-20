@@ -392,7 +392,7 @@ with tab1:
         st.plotly_chart(fig, use_container_width=True, config={'displayModeBar': False})
 
     #Alertes
-    st.markdown("#### Alertes — Créneaux à forte affluence")
+    st.markdown("<h4 style='color:#111111;'>Alertes - Créneaux à forte affluence</h4>", unsafe_allow_html=True)
     high = df[df["prediction"] > 150]
     if not high.empty:
         top_alerts = (high.groupby(["ligne", "tranche", "jour"])["prediction"]
