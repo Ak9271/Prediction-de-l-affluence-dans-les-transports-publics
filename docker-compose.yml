@@ -1,0 +1,19 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: api-devops/Dockerfile
+    ports:
+      - "8000:8000"
+
+  dashboard:
+    build:
+      context: ./Dashboard
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    volumes:
+      - "./Donnees-Netoyees:/Donnees-Netoyees"
+    

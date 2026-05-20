@@ -245,9 +245,7 @@ LIGNE_FILL_COLORS = {
 }
 
 BASE  = os.path.dirname(os.path.abspath(__file__))
-ROOT  = os.path.join(BASE, "..")
-ml_dir = os.path.join(ROOT, "Resultats-Machine Learning")
-CSV_PATH = os.path.join(ml_dir, "Donnees normalisation", "donnees_IA_finales.csv.gz")
+CSV_PATH = "/Donnees-Netoyees/donnees_IA_finales.csv.gz"
 
 @st.cache_data(show_spinner="Chargement des données historiques…")
 def load_actual_data():
